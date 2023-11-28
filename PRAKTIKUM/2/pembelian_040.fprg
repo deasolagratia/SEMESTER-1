@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-07 09:27:40 PM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0wNzswODo0NTo1MyBQTTsyNjEx"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0wNzswOToyNzo0MCBQTTsxOzI3MTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Sabun, Shampoo, SabunWajah, TotalBelanja, JumlahUang, Kembalian, HargaSabun, HargaShampoo, HargaSabunWajah" type="Integer" array="False" size=""/>
+            <input variable="Sabun"/>
+            <input variable="Shampoo"/>
+            <input variable="SabunWajah"/>
+            <input variable="HargaSabun"/>
+            <input variable="HargaShampoo"/>
+            <input variable="HargaSabunWajah"/>
+            <input variable="JumlahUang"/>
+            <assign variable="TotalBelanja" expression="(Sabun*HargaSabun)+(Shampoo*HargaShampoo)+(SabunWajah*HargaSabunWajah)"/>
+            <output expression="&quot;Total Belanja =&quot;" newline="True"/>
+            <output expression="TotalBelanja" newline="True"/>
+            <assign variable="Kembalian" expression="JumlahUang - TotalBelanja"/>
+            <output expression="&quot;Kembalian =&quot;" newline="True"/>
+            <output expression="Kembalian" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

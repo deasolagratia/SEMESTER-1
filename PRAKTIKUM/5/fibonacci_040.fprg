@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-29 10:50:52 AM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0yOTsxMDozNzoyMiBBTTsyNTkw"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0yOTsxMDo1MDo1MiBBTTsxOzI2OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, counter, fn, fn1, fn2" type="Integer" array="False" size=""/>
+            <assign variable="counter" expression="1"/>
+            <assign variable="fn2" expression="0"/>
+            <assign variable="fn1" expression="1"/>
+            <output expression="&quot;Enter any number to find the Fibonacci sequence:&quot;" newline="True"/>
+            <while expression="counter &lt;= n">
+                <assign variable="fn" expression="fn1 + fn2"/>
+            </while>
+            <output expression="fn" newline="True"/>
+            <assign variable="fn2" expression="fn1"/>
+            <assign variable="fn1" expression="fn"/>
+        </body>
+    </function>
+</flowgorithm>

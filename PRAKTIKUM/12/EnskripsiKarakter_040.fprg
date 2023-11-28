@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-17 08:38:37 PM"/>
+        <attribute name="created" value="VVNFUjtBQ0hBQUE7MjAyMi0xMS0xNzswODozMjo0NSBQTTsyMDAw"/>
+        <attribute name="edited" value="VVNFUjtBQ0hBQUE7MjAyMi0xMS0xNzswODozODozNyBQTTsxOzIxMTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="change" type="String" array="False" size=""/>
+            <declare name="Array charword[10]" type="String" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="len" expression="(int)sizeof(word)/sizeof(char)"/>
+            <output expression="&quot;Word: %s, word&quot;" newline="True"/>
+            <for variable="i" start="len" end="0" direction="inc" step="i-1">
+                <output expression="&quot;word[i]=changeword[i]&quot;" newline="True"/>
+                <output expression="&quot;Change word: %s, word&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

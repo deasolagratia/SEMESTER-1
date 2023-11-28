@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-10 08:54:58 PM"/>
+        <attribute name="created" value="VVNFUjtBQ0hBQUE7MjAyMi0xMS0xMDswODo0ODowMCBQTTsxOTkx"/>
+        <attribute name="edited" value="VVNFUjtBQ0hBQUE7MjAyMi0xMS0xMDswODo1NDo1OCBQTTsxOzIxMDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="p1pem, p1pen, p2pem, p2pen, pkalipem, pkalipen" type="Integer" array="False" size=""/>
+            <output expression="&quot;%d, &amp;p1pem,&amp;p1pen&quot;" newline="True"/>
+            <output expression="&quot;%d, &amp;p2pem,&amp;p2pen&quot;" newline="True"/>
+            <assign variable="pkalipem" expression="&quot;p1pem * p2pem&quot;"/>
+            <assign variable="pkalipen" expression="&quot;p1pen * p2pen&quot;"/>
+            <output expression="&quot;%d/%d, pkalipem,pkalipen&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

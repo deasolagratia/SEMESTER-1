@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-10 09:04:04 PM"/>
+        <attribute name="created" value="VVNFUjtBQ0hBQUE7MjAyMi0xMS0xMDswOTowMDo0MyBQTTsxOTg3"/>
+        <attribute name="edited" value="VVNFUjtBQ0hBQUE7MjAyMi0xMS0xMDswOTowNDowNCBQTTsxOzIwOTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="input" type="Integer" array="False" size=""/>
+            <input variable="MasukkanSebuahAngka"/>
+            <output expression="&quot;&amp;d,&amp;input&quot;" newline="True"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="min" expression="0"/>
+            <for variable="i" start="1" end="input" direction="inc" step="i+1">
+                <for variable="min" start="input" end="input" direction="inc" step="min-1">
+                    <output expression="&quot;%d, i&quot;" newline="True"/>
+                    <output expression="&quot;%d, min&quot;" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-01 10:30:57 AM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0wMTsxMDoxNjo1MCBBTTsyNTc4"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0wMTsxMDozMDo1NyBBTTsyOzI2OTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, hasil" type="Integer" array="False" size=""/>
+            <assign variable="hasil" expression="0"/>
+            <output expression="&quot;10 bilangan genap pertama&quot;" newline="True"/>
+            <for variable="x" start="2" end="20" direction="inc" step="2">
+                <assign variable="hasil" expression="hasil+x"/>
+                <output expression="x" newline="True"/>
+            </for>
+            <output expression="&quot;jumlah dari kesepuluh bilangan genap pertama&quot;" newline="True"/>
+            <output expression="hasil" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

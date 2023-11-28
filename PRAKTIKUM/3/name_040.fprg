@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-15 08:18:32 PM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0xNTswNDoyMDozNCBQTTsyNTk4"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0xNTswODoxODozMiBQTTs1OzI3MTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Word1, Word2, Word3, Temp" type="String" array="False" size=""/>
+            <output expression="&quot;Word1=&quot;" newline="True"/>
+            <input variable="Word1"/>
+            <output expression="&quot;Word2=&quot;" newline="True"/>
+            <input variable="Word2"/>
+            <output expression="&quot;Word3=&quot;" newline="True"/>
+            <input variable="Word3"/>
+            <assign variable="Temp" expression="Word1"/>
+            <assign variable="Word1" expression="Word3"/>
+            <assign variable="Word2" expression="Word2"/>
+            <assign variable="Word3" expression="Temp"/>
+            <output expression="&quot;Word1=&quot;&amp;Word1" newline="True"/>
+            <output expression="&quot;Word2=&quot;&amp;Word2" newline="True"/>
+            <output expression="&quot;Word3=&quot;&amp;Word3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-01 10:16:23 AM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0wMTsxMDoxMzoxNSBBTTsyNTc2"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0wMTsxMDoxNjoyMyBBTTsxOzI2ODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Angka" type="Integer" array="False" size=""/>
+            <assign variable="Angka" expression="7"/>
+            <do expression="Angka&lt;=100">
+                <output expression="Angka" newline="True"/>
+                <assign variable="Angka" expression="Angka+7"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

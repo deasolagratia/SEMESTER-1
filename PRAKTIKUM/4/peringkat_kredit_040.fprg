@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-23 05:32:26 PM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0yMzswNTozMDoxMCBQTTsyNTkz"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0yMzswNTozMjoyNiBQTTsxOzI3MTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PokokUtang, MasaTunggak" type="String" array="False" size=""/>
+            <if expression="PokokUtang&lt;=100">
+                <then>
+                    <if expression="MasaTunggak&lt;=6">
+                        <then>
+                            <output expression="&quot;Peringkat Kredit dijadwalkan&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Peringkat Kresidt digagalkan&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="MasaTunggak&lt;=12">
+                        <then/>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

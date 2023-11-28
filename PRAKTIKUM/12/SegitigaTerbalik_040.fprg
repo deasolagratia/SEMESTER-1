@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DANIEL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-17 08:42:12 PM"/>
+        <attribute name="created" value="REFOSUVMO0xBUFRPUC1ENDlMMksyRzsyMDIyLTExLTE2OzA5OjMwOjQ1IFBNOzI3MTc="/>
+        <attribute name="edited" value="REFOSUVMO0xBUFRPUC1ENDlMMksyRzsyMDIyLTExLTE2OzA5OjM0OjIwIFBNOzE7MjgyMg=="/>
+        <attribute name="edited" value="VVNFUjtBQ0hBQUE7MjAyMi0xMS0xNzswODo0MjoxMiBQTTsxOzIxMDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, m" type="Integer" array="False" size=""/>
+            <output expression="&quot;%i,&amp;n&quot;" newline="True"/>
+            <assign variable="m" expression="malloc(sizeof(int)*n)"/>
+            <declare name="i, j, k" type="Integer" array="False" size=""/>
+            <for variable="i" start="n-1" end="0" direction="inc" step="i-1">
+                <output expression="&quot;%i,&amp;m[i]&quot;" newline="True"/>
+            </for>
+            <for variable="i" start="n-1" end="0" direction="inc" step="i-1">
+                <for variable="j" start="m[i]" end="0" direction="inc" step="j-1"/>
+                <for variable="k" start="m[i]" end="0" direction="inc" step="k-1"/>
+                <if expression="k&lt;=j">
+                    <then>
+                        <output expression="&quot;*&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

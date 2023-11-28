@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-07 08:42:24 PM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0wNzswODoxMDo0NCBQTTsyNjAz"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0wNzswODo0MjoyNCBQTTsxOzI3MTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka1, angka2, hasil, sisa" type="Integer" array="False" size=""/>
+            <output expression="&quot;nilai angka1&quot;" newline="True"/>
+            <input variable="angka1"/>
+            <output expression="&quot;nilai angka2&quot;" newline="True"/>
+            <input variable="angka2"/>
+            <assign variable="hasil" expression="angka2 / angka1"/>
+            <output expression="angka2&amp;&quot;/&quot;&amp;angka1&amp;&quot;=&quot;&amp;hasil&amp;&quot;:&quot;" newline="True"/>
+            <assign variable="sisa" expression="angka2 % angka1"/>
+            <output expression="&quot;sisa=&quot;&amp;sisa" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-08 11:18:00 AM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0wODsxMDowMDoyNiBBTTsyNTgx"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0wODsxMToxODowMCBBTTsxOzI2OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, Hasil, cd, x, y" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="3"/>
+            <assign variable="b" expression="4"/>
+            <assign variable="c" expression="421"/>
+            <output expression="&quot;Olah persamaan,sehingga&quot;" newline="True"/>
+            <output expression="&quot;213cd + 4 = 421&quot;" newline="True"/>
+            <output expression="&quot;213cd = 421 - 4&quot;" newline="True"/>
+            <assign variable="x" expression="b * a"/>
+            <assign variable="y" expression="c * a"/>
+            <assign variable="Hasil" expression="c - b"/>
+            <output expression="&quot;bagi kedua ruas dengan 213&quot;" newline="True"/>
+            <assign variable="cd" expression="Hasil * 3"/>
+            <output expression="Hasil" newline="True"/>
+            <output expression="&quot;Maka 639cd =&quot;" newline="True"/>
+            <output expression="cd" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

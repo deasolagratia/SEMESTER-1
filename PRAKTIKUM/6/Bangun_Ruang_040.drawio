@@ -1,0 +1,185 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float pi = 3.14;
+int kubus ();
+int balok();
+int limas();
+int prisma();
+int tabung();
+int kerucut();
+int bola();
+
+int main() {
+    int pil;
+    menu:
+    printf("===Menghitung Keliling dan Luas Bidang Ruang===\n");
+    printf("1. Kubus\n2. Balok\n3. Limas\n4. prisma\n5. tabung\n6. kerucut\n7. bola\n0.keluar\n");
+    printf("Masukkan pilihan anda(0-7)");
+    scanf("%d", &pil);
+    switch (pil)
+    {
+    case 1 :kubus();goto menu;break;
+    case 2 :balok();goto menu;break;
+    case 3 :limas();goto menu;break;
+    case 4 :prisma();goto menu;break;
+    case 5 :tabung();goto menu;break;
+    case 6 :kerucut();goto menu;break;
+    case 7 :bola();goto menu;break;
+    case 0 :printf("Terimakasih");
+
+    }
+}
+
+void kondisi() {
+ char m;
+  printf("Kembali ke menu?(enter M/m)\n");
+  printf("Keluar?(enter E/e)\n");
+  scanf("%s", &m);
+  if(m == 'M' || 'm') {
+     system("clear");
+  }else if(m == 'E' || 'e'){
+    exit(0);
+  }else {
+    system("clear");
+  }
+}
+int kubus()
+{
+    int s,S,l,L;
+    printf("Menghitung Luas dan Keliling Kubus\n");
+    printf("Masukkan:\n");
+    printf("\tSisi Luas :");
+    scanf("%d", &s);
+    printf("\tSisi Keliling :");
+    scanf("%d", &S);
+    l=6 * s * s;
+    L=12* S;  
+    printf("Luas = %d\n",l);
+    printf("Keliling = %d\n",L);
+  kondisi();    
+}
+int balok()
+{
+    int p,l,t,P,pp,ppp,M,m;
+    printf("Menghitung Luas dan Keliling Balok");
+    printf("Masukkan :\n");
+    printf("Panjang :\n");
+    scanf("%d", &p);
+    printf("Lebar :\n");
+    scanf("%d", &l);
+    printf("Tinggi :\n");
+    scanf("%d", &t);
+    P=p*l;
+    pp=p*t;       
+    ppp=l*t;
+    M=2*(P + pp + ppp);
+    m=4*(p + l +t);
+    printf("Luas =%d\n",M);
+    printf("Keliling =%d\n",m);
+  kondisi();
+}
+int limas()
+{
+    float a,t,T,l,k,L,P,M,m,z,h,u,e;
+    printf("Menghitung Luas dan Keliling Limas\n");
+    printf("Masukkan:\n");
+    printf("\tAlas :");
+    scanf("%f", &a);
+    printf("\tTinggi :");
+    scanf("%f", &t);
+    printf("\tTinggi Segitiga :");
+    scanf("%f", &M);
+    T=a*t;
+    L= T *1/2;
+    m=a*M;
+    z=m *1/2;
+    h=3*z;
+    u=L + h;
+    e=T *1/2;
+    printf("Luas Limas =%2.f\n",u);
+    printf("Keliling Limas =%2.f\n",e);
+  kondisi();
+}
+int prisma ()
+{
+    float a,b,c,d,e,f,g,h,i,j,k,l,m,n,A,B,C,D,E;
+    printf("Menghitung Luas dan Keliling Limas\n");
+    printf("Masukkan:\n");
+    printf("\tAlas 1 :");
+    scanf("%f", &a);
+    printf("\tAlas 2 :");
+    scanf("%f", &k);
+    printf("\tAlas 3 :");
+    scanf("%f", &l);
+    printf("\tJumlah rusuk prisma :");
+    scanf("%f", &m);
+    printf("\tTinggi Prisma :\n");
+    scanf("%f", &b);
+    printf("Tinggi bidang tegak :");
+    scanf("%f", &f);
+
+    c=a*b;
+    d=c *1/2;
+    e=d*d;
+    g=a*f;
+    h=g *3;
+    i=e+h;
+    j=a+k+l;
+    n=m*b;
+    A=2*j;
+    B=A+n;
+    printf("Luas Prisma : %2.f\n",i);
+    printf("Keliling Prisma : %2.f\n",B);
+  kondisi();
+}
+int tabung ()
+{
+    int a,b,c,d,e,f,g,h,i;
+    pi=3.14;
+    printf("Menghitung Luas dan Keliling Tabung\n");
+    printf("Masukkan :\n");
+    printf("jari-jari :");
+    scanf("%d", &a);
+    printf("Tinggi :\n");
+    scanf("%d" ,&b);
+    c=pi*a;
+    d=c *2;
+    e=a+b;
+    f=d*e;
+    printf("Luas Tabung : %d\n",f);
+    printf("Keliling Tabung :%d\n",d);
+  kondisi();
+}
+
+int kerucut ()
+{
+    int a,b,c,d,e,f,g,h;
+    printf("Menghitung Luas dan Keliling  Kerucut\n");
+    printf("Masukkan :\n");
+    printf("masukkan Radius :\n");
+    scanf("%d", &a);
+    printf("masukkan Garis Pelukis :\n");
+    scanf("%d", &b);
+    c=a *22/7;
+    d=a+b;
+    e=c*d;
+    printf("Luas Kerucut : %d\n",e);
+    printf("Kerucut Tidak mempunyai Keliling\n");
+  kondisi();
+}     
+int bola ()
+{
+    float r,v,a,k,x;
+    printf("Menghitung Luas dan Keliling Bola\n");
+    printf("Masukkkan :\n");
+    printf("\tJari-jari :");
+    scanf("%f", &r);
+     printf("\tDiameter");
+     scanf("%f", &x);
+    v=4*pi*(r*r*r);
+    k=pi*x;
+    printf("Luas Lingkaran :%2.f\n",v);
+    printf("Keliling Lingkaran :%2.f\n",k);
+    kondisi();
+}

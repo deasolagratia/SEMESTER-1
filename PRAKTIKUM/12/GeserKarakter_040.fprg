@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-17 08:31:19 PM"/>
+        <attribute name="created" value="VVNFUjtBQ0hBQUE7MjAyMi0xMS0xNzswODoyMjo1MyBQTTsxOTk4"/>
+        <attribute name="edited" value="VVNFUjtBQ0hBQUE7MjAyMi0xMS0xNzswODozMToxOSBQTTsyOzIxMDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, M, J, x, i" type="Integer" array="False" size=""/>
+            <declare name="name" type="String" array="False" size=""/>
+            <output expression="&quot;%i, &amp;name&quot;" newline="True"/>
+            <declare name="strlen, name" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="n" direction="inc" step="i+1">
+                <assign variable="M" expression="0"/>
+                <if expression="j &gt; len">
+                    <then>
+                        <assign variable="j" expression="0"/>
+                    </then>
+                    <else/>
+                </if>
+                <for variable="x" start="j" end="len" direction="inc" step="x+1">
+                    <output expression="&quot;%c, name[x]&quot;" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

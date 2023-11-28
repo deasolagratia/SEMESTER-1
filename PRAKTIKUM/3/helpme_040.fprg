@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-15 08:16:12 PM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0xNTswODoxMjoyOSBQTTsyNjA3"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0xNTswODoxNjoxMiBQTTsxOzI3MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Message" type="String" array="False" size=""/>
+            <declare name="Code" type="String" array="False" size=""/>
+            <input variable="Message"/>
+            <output expression="&quot;I'am Happy&quot;" newline="True"/>
+            <output expression="&quot;Help Me&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-23 04:50:21 PM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0yMzswNDozMjozNSBQTTsyNjAx"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0yMzswNDo1MDoyMSBQTTsxOzI3MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan nilai kuliah&quot;" newline="True"/>
+            <input variable="x"/>
+            <if expression="x &gt; 80">
+                <then>
+                    <output expression="&quot;Anda mendapat grade A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="x &gt; 65">
+                        <then>
+                            <output expression="&quot;Anda mendapat grade B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="x &gt; 50">
+                                <then>
+                                    <output expression="&quot;Anda mendapat grade D&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Anda mendapat grade E&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

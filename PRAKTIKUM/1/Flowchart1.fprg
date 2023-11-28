@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-01 10:07:35 AM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0wMTsxMDowMzoyOCBBTTsyNTc5"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0wMTsxMDowNzozNSBBTTsxOzI2ODk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Angka" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bilangan ganjil kurang dari 100&quot;" newline="True"/>
+            <input variable="Angka"/>
+            <assign variable="Angka" expression="1"/>
+            <while expression="Angka&lt;=100">
+                <output expression="Angka&amp;&quot;&quot;" newline="True"/>
+                <assign variable="Angka" expression="Angka+2"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

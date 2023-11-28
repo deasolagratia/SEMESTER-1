@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-29 09:00:59 PM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0yOTswODo1NTo0NSBQTTsyNjE3"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0yOTswOTowMDo1OSBQTTsxOzI3MjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="low, max, total, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Lower Limit:&quot;" newline="True"/>
+            <input variable="low"/>
+            <output expression="&quot;Enter Upper Limit:&quot;" newline="True"/>
+            <input variable="max"/>
+            <assign variable="total" expression="0"/>
+            <for variable="i" start="low" end="max" direction="inc" step="1">
+                <if expression="i%2==0">
+                    <then>
+                        <assign variable="total" expression="total + i"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Sum of evem numbers from &quot;&amp;low" newline="True"/>
+            <output expression="&quot;to&quot;&amp;max" newline="True"/>
+            <output expression="&quot;is&quot;&amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

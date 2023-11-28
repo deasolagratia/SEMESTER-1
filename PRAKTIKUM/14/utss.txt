@@ -1,0 +1,5 @@
+Daspro  |100
+PSW     |500
+PRPL    |200
+MATDIS  |300
+AOK     |400

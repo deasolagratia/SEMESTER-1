@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DANIEL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-17 08:41:18 PM"/>
+        <attribute name="created" value="REFOSUVMO0xBUFRPUC1ENDlMMksyRzsyMDIyLTExLTE2OzA5OjI2OjUzIFBNOzI3MjE="/>
+        <attribute name="edited" value="REFOSUVMO0xBUFRPUC1ENDlMMksyRzsyMDIyLTExLTE2OzA5OjMwOjE4IFBNOzE7MjgyNQ=="/>
+        <attribute name="edited" value="VVNFUjtBQ0hBQUE7MjAyMi0xMS0xNzswODo0MToxOCBQTTsxOzIxMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, z" type="Integer" array="False" size=""/>
+            <if expression="z%x==0||z%y==0">
+                <then>
+                    <output expression="&quot;return z&quot;" newline="True"/>
+                    <output expression="&quot;check(x,y,z-1)&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <declare name="hasil" type="Integer" array="False" size=""/>
+            <output expression="&quot;%i%i%i,&amp;x,&amp;y,&amp;z&quot;" newline="True"/>
+            <assign variable="hasil" expression="check(x,y,z)"/>
+            <output expression="&quot;return %i, hasil&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

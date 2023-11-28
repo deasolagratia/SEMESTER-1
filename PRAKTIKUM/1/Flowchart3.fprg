@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-01 09:59:11 AM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOC0zMTswMjozMzo1OSBQTTsyNjA0"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtTjU4NEowOUo7MjAyMi0wOS0wMTswOTo1OToxMSBBTTsxMDsyNzQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Volume, Phi, r, Tinggi" type="Real" array="False" size=""/>
+            <assign variable="Phi" expression="3.14"/>
+            <input variable="r"/>
+            <input variable="Tinggi"/>
+            <for variable="Volume" start="1" end="10" direction="inc" step="1">
+                <assign variable="Volume" expression="Phi*r*r*Tinggi"/>
+                <output expression="Volume" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

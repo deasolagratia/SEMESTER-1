@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-10 09:11:52 PM"/>
+        <attribute name="created" value="VVNFUjtBQ0hBQUE7MjAyMi0xMS0xMDswOTowNDowNiBQTTsxOTkw"/>
+        <attribute name="edited" value="VVNFUjtBQ0hBQUE7MjAyMi0xMS0xMDswOToxMTo1MiBQTTsxOzIwOTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, k, input" type="Integer" array="False" size=""/>
+            <input variable="MasukkanBanyakAngka"/>
+            <output expression="&quot;%d,&amp;input&quot;" newline="True"/>
+            <for variable="i" start="0" end="input" direction="inc" step="i+1">
+                <assign variable="chr" expression="65"/>
+                <for variable="j" start="0" end="i" direction="inc" step="j+1">
+                    <if expression="j%2==0&amp;&amp;i%2==0 || i%2!=0&amp;&amp;j%2!=0">
+                        <then>
+                            <output expression="&quot;*&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <output expression="&quot;%c, chr&quot;" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
